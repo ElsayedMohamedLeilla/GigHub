@@ -177,9 +177,20 @@
     <Compile Include="Migrations\202005270616409_InitialModel.Designer.cs">
       <DependentUpon>202005270616409_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005270630297_AddGigAndGenreTablesToDatabase.cs" />
+    <Compile Include="Migrations\202005270630297_AddGigAndGenreTablesToDatabase.Designer.cs">
+      <DependentUpon>202005270630297_AddGigAndGenreTablesToDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005270645013_ModifySomeColumns.cs" />
+    <Compile Include="Migrations\202005270645013_ModifySomeColumns.Designer.cs">
+      <DependentUpon>202005270645013_ModifySomeColumns.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -260,6 +271,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202005270616409_InitialModel.resx">
       <DependentUpon>202005270616409_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005270630297_AddGigAndGenreTablesToDatabase.resx">
+      <DependentUpon>202005270630297_AddGigAndGenreTablesToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005270645013_ModifySomeColumns.resx">
+      <DependentUpon>202005270645013_ModifySomeColumns.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
