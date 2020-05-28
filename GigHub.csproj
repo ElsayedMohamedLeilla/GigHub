@@ -190,6 +190,10 @@
     <Compile Include="Migrations\202005270652203_PopulateGneresTable.Designer.cs">
       <DependentUpon>202005270652203_PopulateGneresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005281822308_AddForegnKeyPropertiesToGig.cs" />
+    <Compile Include="Migrations\202005281822308_AddForegnKeyPropertiesToGig.Designer.cs">
+      <DependentUpon>202005281822308_AddForegnKeyPropertiesToGig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -287,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005270652203_PopulateGneresTable.resx">
       <DependentUpon>202005270652203_PopulateGneresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005281822308_AddForegnKeyPropertiesToGig.resx">
+      <DependentUpon>202005281822308_AddForegnKeyPropertiesToGig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
