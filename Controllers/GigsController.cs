@@ -27,14 +27,22 @@ namespace GigHub.Controllers
         }
 
         [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                var genres = _context.Genres.ToList();
+                viewModel.Genres = genres;
+                return View("Create", viewModel);
+            }
             var currentUserId = User.Identity.GetUserId();
 
             var gig = new Gig
             {
                 ArtistId = currentUserId,
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };
